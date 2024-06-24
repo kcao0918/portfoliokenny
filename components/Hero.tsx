@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import ResumeButton from "./ui/ResumeButton";
 
 const Hero = () => {
   return (
@@ -33,6 +35,7 @@ const Hero = () => {
             <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
               Hi, I&apos;m Kenny, a Software Developer from New York City
             </p>
+            <ResumeButton title="Download Resume" />
           </div>
         </div>
       </div>

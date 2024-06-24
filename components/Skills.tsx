@@ -9,7 +9,7 @@ import Title from "./Title";
 const Skills = () => {
   return (
     <div>
-      <Title title="Skills" />
+      <Title title="Technical Skills" />
       <div className="max-w-5xl mx-auto px-8">
         <HoverEffect items={skillsList} />
       </div>
