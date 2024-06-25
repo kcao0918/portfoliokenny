@@ -29,7 +29,7 @@ const Projects = () => {
                 </CardItem>
                 <CardItem translateZ="100" className="w-full mt-4">
                   <Image
-                    src={"/GideImage.png"}
+                    src={`/${project.content}`}
                     height={1000}
                     width={1000}
                     className="h-80 w-full object-fill rounded-xl group-hover:shadow-xl"
