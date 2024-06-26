@@ -4,11 +4,22 @@ import {
   SiBootstrap,
   SiFirebase,
   SiGit,
+  SiGithub,
+  SiGmail,
+  SiJavascript,
+  SiLinkedin,
   SiMongodb,
   SiNextdotjs,
   SiReact,
   SiTailwindcss,
 } from "react-icons/si";
+
+export const navItems = [
+  { name: "Home", link: "/" },
+  { name: "Skills", link: "#skills" },
+  { name: "Experiences", link: "#experiences" },
+  { name: "Projects", link: "#projects" },
+];
 
 export const ExperiencesList = [
   {
@@ -74,13 +85,6 @@ export const ProjectItems = [
     content: "",
     link: "https://github.com/kcao0918/SpotifyWrapped",
   },
-  /*{
-    title: "SpotifyWrapped",
-    description:
-      "asdasdas dasdasdas dasd asdasdasd asdas dasdasd asdas dasd asdasdasdasd aasdad asdasda sdasdasdasdasdas sadasdassdadasdasda",
-    content: "",
-    link: "",
-  },*/
 ];
 
 export const skillsList = [
@@ -93,16 +97,16 @@ export const skillsList = [
     Icon: SiNextdotjs,
   },
   {
+    text: "JavaScript",
+    Icon: SiJavascript,
+  },
+  {
     text: "Tailwind",
     Icon: SiTailwindcss,
   },
   {
     text: "Bootstrap",
     Icon: SiBootstrap,
-  },
-  {
-    text: "Git",
-    Icon: SiGit,
   },
   {
     text: "Firebase",
@@ -113,7 +117,22 @@ export const skillsList = [
     Icon: SiMongodb,
   },
   {
-    text: "Android Studio",
-    Icon: SiAndroidstudio,
+    text: "Git",
+    Icon: SiGit,
+  },
+];
+
+export const socials = [
+  {
+    Icon: SiLinkedin,
+    url: "https://www.linkedin.com/in/kennycao4/",
+  },
+  {
+    Icon: SiGmail,
+    url: "",
+  },
+  {
+    Icon: SiGithub,
+    url: "https://github.com/kcao0918",
   },
 ];

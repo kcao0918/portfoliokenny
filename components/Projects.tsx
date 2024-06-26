@@ -7,9 +7,9 @@ import Image from "next/image";
 
 const Projects = () => {
   return (
-    <div>
+    <section id="projects">
       <Title title="Recent Projects" />
-      <div className="grid cols-1 sm:grid-cols-2">
+      <div className="grid cols-1 lg:grid-cols-2 ">
         {ProjectItems.map((project, index) => {
           return (
             <CardContainer key={index}>
@@ -23,7 +23,7 @@ const Projects = () => {
                 <CardItem
                   as="p"
                   translateZ="60"
-                  className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+                  className="max-w-sm mt-2 text-sm text-neutral-500 dark:text-neutral-300"
                 >
                   {project.description}
                 </CardItem>
@@ -32,17 +32,17 @@ const Projects = () => {
                     src={`/${project.content}`}
                     height={1000}
                     width={1000}
-                    className="h-80 w-full object-fill rounded-xl group-hover:shadow-xl"
+                    className="object-cover w-full h-70 rounded-xl group-hover:shadow-xl"
                     alt="thumbnail"
                   />
                 </CardItem>
-                <div className="flex justify-end items-center mt-7">
+                <div className="flex items-center justify-end mt-7">
                   <CardItem
                     translateZ={20}
                     as={Link}
                     href={project.link}
                     target="__blank"
-                    className="px-4 py-2 rounded-xl text-md font-normal dark:text-violet-200"
+                    className="px-4 py-2 font-normal rounded-xl text-md dark:text-violet-200"
                   >
                     Github →
                   </CardItem>
@@ -52,7 +52,7 @@ const Projects = () => {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
 
