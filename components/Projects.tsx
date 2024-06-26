@@ -13,7 +13,7 @@ const Projects = () => {
         {ProjectItems.map((project, index) => {
           return (
             <CardContainer key={index}>
-              <CardBody className="bg-gray-50 relative dark:hover:shadow-2xl dark:hover:shadow-indigo-500/[.5] dark:bg-black dark:border-purple-100/[0.5] border-black/[0.1] sm:w-[30rem] h-auto rounded-xl p-6 border cursor-pointer">
+              <CardBody className="bg-gray-50 relative dark:hover:shadow-2xl dark:hover:shadow-indigo-500/[.5] dark:bg-black dark:border-purple-100/[0.5] border-black/[0.1] sm:w-[30rem] w-11/12 h-auto rounded-xl p-6 border cursor-pointer">
                 <CardItem
                   translateZ="50"
                   className="text-xl font-bold text-neutral-600 dark:text-white"
