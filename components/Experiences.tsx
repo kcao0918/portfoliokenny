@@ -11,22 +11,36 @@ export function Experiences() {
         <div className="max-w-2xl mx-auto antialiased pt-4 relative">
           {ExperiencesList.map((experience, index) => (
             <div key={`content-${index}`} className="mb-10">
-              <p className="text-xl mb-4">{experience.company}</p>
-              <h2 className="bg-black text-white rounded-full text-sm w-fit px-4 py-1 mb-4">
-                {experience.badge}
+              <h1 className="text-2xl mb-0 text-indigo-500 font-bold">
+                {experience.company}
+              </h1>
+              <h2 className="text-sm mb-2 text-indigo-200 font-semibold">
+                {experience.role}
               </h2>
-
-              <div className="text-sm  prose prose-sm dark:prose-invert">
-                {experience?.image && (
-                  <Image
-                    src={`/GideImage.png`}
-                    alt="blog thumbnail"
-                    height="1000"
-                    width="1000"
-                    className="rounded-lg mb-10 object-cover"
-                  />
+              <div>
+                {experience.techStack.map((tech, techIndex) => (
+                  <button
+                    key={techIndex}
+                    className="relative inline-flex h-7 overflow-hidden rounded-full p-[1px] mr-2"
+                  >
+                    <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+                    <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 text-sm text-white backdrop-blur-3xl">
+                      {tech}
+                    </span>
+                  </button>
+                ))}
+              </div>
+              <div className="mt-3">
+                {experience.descriptionList.map(
+                  (description, descriptionIndex) => (
+                    <div
+                      key={descriptionIndex}
+                      className="text-sm mb-1 text-blue-200"
+                    >
+                      {description}
+                    </div>
+                  )
                 )}
-                {experience.description}
               </div>
             </div>
           ))}

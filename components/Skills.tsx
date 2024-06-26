@@ -3,7 +3,6 @@
 import React from "react";
 import { HoverEffect } from "./ui/HoverEffect";
 import { skillsList } from "@/data";
-import { Highlight } from "./ui/HeroHighlight";
 import Title from "./Title";
 
 const Skills = () => {
