@@ -56,7 +56,7 @@ export const FloatingNav = ({
           duration: 0.6,
         }}
         className={cn(
-          "flex w-9/12 sm:w-3/6 md:w-2/6 lg:w-3/12 fixed top-7 inset-x-0 mx-auto border border-transparent dark:border-white/[0.2] rounded-3xl dark:bg-black-200 bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] py-4 items-center justify-center space-x-4 lg:space-x-6",
+          "flex w-11/12 sm:w-3/6 md:w-3/6 lg:w-4/12 fixed top-7 inset-x-0 mx-auto border border-transparent dark:border-white/[0.2] rounded-3xl dark:bg-zinc-900 bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] py-4 items-center justify-center space-x-4 lg:space-x-7",
           className
         )}
       >
@@ -65,7 +65,7 @@ export const FloatingNav = ({
             key={`link=${idx}`}
             href={navItem.link}
             className={cn(
-              "font-semibold relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
+              "font-semibold relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-indigo-300 hover:text-neutral-500 duration-200 ease-in"
             )}
           >
             <span className="text-sm sm:block">{navItem.name}</span>

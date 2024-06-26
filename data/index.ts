@@ -19,6 +19,7 @@ export const navItems = [
   { name: "Skills", link: "#skills" },
   { name: "Experiences", link: "#experiences" },
   { name: "Projects", link: "#projects" },
+  { name: "Contact", link: "#contact" },
 ];
 
 export const ExperiencesList = [
@@ -50,7 +51,7 @@ JSON-formatted data including new coordinates, stroke attributes, and line color
   {
     company: "Georgia Tech Financial Services and Innovation Lab",
     role: "Undergraduate Researcher",
-    techStack: ["Python", "MongoDB"],
+    techStack: ["Pytorch", "Pandas", "Python", "MongoDB"],
     descriptionList: [
       `• Contributed to a neural network for stock prediction using PyTorch and Pandas to automatically discern financially
 relevant news by utilizing past stock price movements and the Gigaword Dataset
@@ -82,8 +83,15 @@ export const ProjectItems = [
     title: "SpotifyWrapped",
     description:
       "Android application providing details on your top songs/artists, and providing new recommendations",
-    content: "",
+    content: "SpotifyWrappedImage.png",
     link: "https://github.com/kcao0918/SpotifyWrapped",
+  },
+  {
+    title: "Coming soon...",
+    description:
+      "Currently working on next project... For now feel free to look through the rest of my Website :)",
+    content: "CatTypingImage.jpg",
+    link: "/",
   },
 ];
 
@@ -129,7 +137,7 @@ export const socials = [
   },
   {
     Icon: SiGmail,
-    url: "",
+    url: "mailto:kcao0918@gmail.com?subject=Hello&body=Hello%20from%20my%20web%20app!",
   },
   {
     Icon: SiGithub,

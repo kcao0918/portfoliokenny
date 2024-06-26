@@ -2,12 +2,13 @@
 import React from "react";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import ResumeButton from "./ui/ResumeButton";
+import { BackgroundBeams } from "./ui/BackgroundBeams";
 
 const Hero = () => {
   return (
     <div className="pb-20 pt-36">
-      <div className="relative flex justify-center my-20 x-10">
-        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
+      <div className="relative flex justify-center py-10 my-20">
+        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center z-10">
           <h2 className="text-xs tracking-widest text-center text-blue-100 uppercase max-w-80">
             My Personal Portfolio with NextJS and TailwindCSS
           </h2>
@@ -20,6 +21,7 @@ const Hero = () => {
           </p>
           <ResumeButton title="Download Resume" />
         </div>
+        <BackgroundBeams />
       </div>
     </div>
   );

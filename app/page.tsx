@@ -5,7 +5,6 @@ import Skills from "@/components/Skills";
 import Footer from "@/components/Footer";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/data";
-import { BackgroundGradientAnimation } from "@/components/ui/backgroundGradientAnimation";
 
 export default function Home() {
   return (

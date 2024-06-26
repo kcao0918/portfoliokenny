@@ -13,7 +13,7 @@ const Projects = () => {
         {ProjectItems.map((project, index) => {
           return (
             <CardContainer key={index}>
-              <CardBody className="bg-gray-50 relative dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-purple-200/[0.5] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border cursor-pointer">
+              <CardBody className="bg-gray-50 relative dark:hover:shadow-2xl dark:hover:shadow-indigo-500/[.5] dark:bg-black dark:border-purple-100/[0.5] border-black/[0.1] sm:w-[30rem] h-auto rounded-xl p-6 border cursor-pointer">
                 <CardItem
                   translateZ="50"
                   className="text-xl font-bold text-neutral-600 dark:text-white"
@@ -27,13 +27,13 @@ const Projects = () => {
                 >
                   {project.description}
                 </CardItem>
-                <CardItem translateZ="100" className="w-full mt-4">
+                <CardItem translateZ="100" className="relative">
                   <Image
                     src={`/${project.content}`}
-                    height={1000}
                     width={1000}
-                    className="object-cover w-full h-70 rounded-xl group-hover:shadow-xl"
-                    alt="thumbnail"
+                    height={1000}
+                    className="object-cover w-full rounded-xl group-hover:shadow-xl"
+                    alt="work in progress"
                   />
                 </CardItem>
                 <div className="flex items-center justify-end mt-7">
