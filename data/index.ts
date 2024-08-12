@@ -64,7 +64,7 @@ export const ProjectItems = [
     title: "TuneIn",
     description:
       "Event booking platform tailored for musicians trying their next gig",
-    content: "file.png",
+    content: "TuneIn.png",
     link: "https://github.com/kcao0918/TuneIn",
   },
   {
